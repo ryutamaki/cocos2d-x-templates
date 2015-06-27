@@ -7,20 +7,27 @@ function _copy() {
     echo $'\e[32mCopy template files into xcode template directory\e[m' 1>&2
 
     echo $'\e[33mMake sure create a directory below (and if you have already, remove it before copy files).\e[m' 1>&2
-    echo $xcode_template_path 1>&2
+    echo "  $xcode_template_path" 1>&2
 
-    read -p "Continue (y/n)?" choice
-    case "$choice" in 
+    read -p $'\e[32mContinue (y/n)?\e[m' choice
+    case "$choice" in
         y|Y ) echo "yes";;
-        n|N ) echo "no";;
-        * ) echo "invalid";;
+        n|N ) echo "Aborted"; exit;;
+        * ) echo "Aborted"; exit;;
     esac
 
     echo $'\e[32mAlso needs a permission for root user, if you trust me, please enter your password\e[m' 1>&2
 
-    sudo mkdir -p "$xcode_template_path"
     sudo rm -rf "$xcode_template_path"
-    sudo cp -r $script_dir/../*.xctemplate "$xcode_template_path"
+    sudo mkdir -p "$xcode_template_path"
+
+    echo $'\e[34mStart to copy files\e[m'
+    ls | grep xctemplate | sed | while read dir; do
+        echo "  $dir"
+        sudo mkdir -p "$xcode_template_path/$dir"
+        sudo cp -r "$script_dir/../$dir" "$xcode_template_path"
+    done
+    echo $'\e[34mFinish\e[m'
 }
 
 function _clean() {
@@ -33,10 +40,10 @@ function _clean() {
     echo $xcode_template_path 1>&2
 
     read -p "Continue (y/n)?" choice
-    case "$choice" in 
+    case "$choice" in
         y|Y ) echo "yes";;
-        n|N ) echo "no";;
-        * ) echo "invalid";;
+        n|N ) echo "Aborted"; exit;;
+        * ) echo "Aborted"; exit;;
     esac
 
     echo $'\e[32mAlso needs a permission for root user, if you trust me, please enter your password\e[m' 1>&2
