@@ -9,7 +9,7 @@
 #include "___FILEBASENAME___.h"
 
 bool ___FILEBASENAME___::init() {
-    if (! Node::init()) {
+    if (!Node::init()) {
         return false;
     }
 

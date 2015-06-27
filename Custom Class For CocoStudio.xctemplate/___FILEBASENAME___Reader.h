@@ -18,6 +18,5 @@ public:
     static void purge();
     cocos2d::Node* createNodeWithFlatBuffers(const flatbuffers::Table* nodeOptions);
 };
-#include <stdio.h>
 
 #endif /* defined(_____PROJECTNAMEASIDENTIFIER________FILEBASENAMEASIDENTIFIER_____) */

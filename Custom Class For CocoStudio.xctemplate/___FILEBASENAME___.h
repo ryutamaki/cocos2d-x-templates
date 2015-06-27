@@ -15,11 +15,11 @@
 class ___FILEBASENAMEASIDENTIFIER___ : public cocos2d::Node {
 public:
     CREATE_FUNC(___FILEBASENAMEASIDENTIFIER___);
-
     bool init() override;
 
 protected:
     cocostudio::timeline::ActionTimeline* timeline;
+
 };
 
 #endif /* defined(_____PROJECTNAMEASIDENTIFIER________FILEBASENAMEASIDENTIFIER_____) */
