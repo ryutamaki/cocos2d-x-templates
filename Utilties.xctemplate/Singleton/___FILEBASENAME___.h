@@ -11,7 +11,8 @@
 
 #include "cocos2d.h"
 
-class ___FILEBASENAMEASIDENTIFIER___ {
+class ___FILEBASENAMEASIDENTIFIER___
+{
 public:
     static ___FILEBASENAMEASIDENTIFIER___* getInstance();
 
