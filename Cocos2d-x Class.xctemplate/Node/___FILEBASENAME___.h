@@ -18,6 +18,8 @@ public:
 
 private:
     bool init() override;
+    void onEnter() override;
+    void onExit() override;
 
 };
 
