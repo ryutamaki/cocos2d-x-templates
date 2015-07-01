@@ -8,10 +8,12 @@
 
 #include "___FILEBASENAME___.h"
 
-using namespace cocos2d;
+USING_NS_CC;
 
-bool ___FILEBASENAMEASIDENTIFIER___::init() {
-    if (!___VARIABLE_cocos2dxSubclass___::init()) {
+bool ___FILEBASENAMEASIDENTIFIER___::init()
+{
+    if (!___VARIABLE_cocos2dxSubclass___::init())
+    {
         return false;
     }
 
