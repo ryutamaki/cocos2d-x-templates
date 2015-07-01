@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>AllowedTypes</key>
+    <array>
+        <string>public.c-plus-plus-source</string>
+    </array>
+    <key>DefaultCompletionName</key>
+    <string>MyNode</string>
+    <key>Description</key>
+    <string>Utility classes which is useful for cocos2d-x.</string>
+    <key>Kind</key>
+    <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Description</key>
+            <string>The name of the class to create</string>
+            <key>Identifier</key>
+            <string>productName</string>
+            <key>Name</key>
+            <string>Class:</string>
+            <key>NotPersisted</key>
+            <true/>
+            <key>Required</key>
+            <true/>
+            <key>Type</key>
+            <string>text</string>
+        </dict>
+        <dict>
+            <key>Default</key>
+            <string>Singleton</string>
+            <key>Description</key>
+            <string>Utility classes useful for Cocos2d-x</string>
+            <key>Identifier</key>
+            <string>utilityName</string>
+            <key>Name</key>
+            <string>Subclass of:</string>
+            <key>Required</key>
+            <true/>
+            <key>Suffixes</key>
+            <dict>
+                <key>Singleton</key>
+                <string>Singleton</string>
+            </dict>
+            <key>Type</key>
+            <string>combo</string>
+        </dict>
+    </array>
+    <key>SortOrder</key>
+    <string>1</string>
+    <key>Summary</key>
+    <string>A Cocos2d-x Class</string>
+</dict>
+</plist>
