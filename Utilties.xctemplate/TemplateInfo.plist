@@ -30,7 +30,7 @@
         </dict>
         <dict>
             <key>Default</key>
-            <string>Singleton</string>
+            <string>Scene</string>
             <key>Description</key>
             <string>Utility classes useful for Cocos2d-x</string>
             <key>Identifier</key>
@@ -41,11 +41,16 @@
             <true/>
             <key>Suffixes</key>
             <dict>
-                <key>Singleton</key>
-                <string>Singleton</string>
+                <key>Scene</key>
+                <string>Scene</string>
             </dict>
             <key>Type</key>
             <string>combo</string>
+            <key>Values</key>
+            <array>
+                <string>Scene</string>
+                <string>Singleton</string>
+            </array>
         </dict>
     </array>
     <key>SortOrder</key>
