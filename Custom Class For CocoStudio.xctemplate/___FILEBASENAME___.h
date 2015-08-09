@@ -20,6 +20,9 @@ public:
 protected:
     cocostudio::timeline::ActionTimeline* timeline;
 
+    void onEnter() override;
+    void onExit() override;
+
 };
 
 #endif /* defined(_____PROJECTNAMEASIDENTIFIER________FILEBASENAMEASIDENTIFIER_____) */

@@ -8,6 +8,8 @@
 
 #include "___FILEBASENAME___.h"
 
+#pragma mark - Public methods
+
 bool ___FILEBASENAME___::init() {
     if (!Node::init()) {
         return false;
@@ -19,4 +21,18 @@ bool ___FILEBASENAME___::init() {
     this->timeline->retain();
 
     return true;
+}
+
+#pragma mark - Private methods
+
+#pragma mark View lifecycle
+
+void ___FILEBASENAME___::onEnter()
+{
+    Node::onEnter();
+}
+
+void ___FILEBASENAME___::onExit()
+{
+    Node::onExit();
 }
