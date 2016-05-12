@@ -7,6 +7,7 @@
 //
 
 #include "___FILEBASENAME___.h"
+USING_NS_CC;
 
 #pragma mark - Public methods
 
